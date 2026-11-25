@@ -34,85 +34,19 @@
         }
 
         .avatar {
-            display: block;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #14213d;
-            background: #14213d;
-        }
-
-        /* Shows initials if the GitHub photo fails to load */
-        .avatar-ring.no-img::after {
-            content: "TA";
-            position: absolute;
-            inset: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 100%;
+            height: 100%;
             border-radius: 50%;
             border: 4px solid #14213d;
-            background: #1d2f57;
+            background: linear-gradient(145deg, #1d2f57, #0f1a33);
             color: white;
-            font-size: 44px;
+            font-size: 52px;
             font-weight: bold;
-            letter-spacing: 2px;
-        }
-        .avatar-ring.no-img .avatar { visibility: hidden; }
-
-        header h1 { margin: 0 0 8px; }
-        header p { margin: 4px 0; }
-
-        .semester {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 5px 14px;
-            border: 1px solid #8fa3c7;
-            border-radius: 20px;
-            font-size: 14px;
+            letter-spacing: 3px;
+            user-select: none;
         }
 
-        section {
-            background: white;
-            width: 90%;
-            max-width: 850px;
-            margin: 20px auto;
-            padding: 25px;
-            border-radius: 10px;
-        }
-
-        h1, h2 { word-wrap: break-word; }
-        h2 { color: #14213d; }
-        a { color: #0077b6; }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-        }
-
-        @media screen and (max-width: 768px) {
-            body { font-size: 14px; }
-            section { width: 95%; padding: 15px; }
-            header h1 { font-size: 24px; }
-            .avatar-ring { width: 120px; height: 120px; }
-            .avatar-ring.no-img::after { font-size: 34px; }
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <!-- Replace YOURUSERNAME with your GitHub username. Your GitHub profile photo loads automatically. -->
-    <div class="avatar-ring">
-        <img class="avatar" src="https://github.com/YOURUSERNAME.png"
-             alt="Tasneem Ara profile picture"
-             onerror="this.parentElement.classList.add('no-img')">
-    </div>
-    <h1>Tasneem Ara</h1>
-    <p>Information Security Student | Future Cybersecurity Engineer</p>
-    <span class="semester">Currently in Semester 3 (Fall 2026)</span>
-</header>
-
-<section>
-    <h2>About
+        header
